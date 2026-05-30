@@ -55,6 +55,15 @@ app.post('/api/contact', async (req, res) => {
 
 // Start Server
 const PORT = process.env.PORT || 3000;
+// Data dekhne ke liye naya link
+app.get('/api/leads', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT * FROM contacts ORDER BY created_at DESC');
+        res.status(200).json(result.rows);
+    } catch (err) {
+        res.status(500).json({ error: 'Database error' });
+    }
+});
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
