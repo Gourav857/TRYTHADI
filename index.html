@@ -2071,11 +2071,11 @@
             });
         });
 
-        // 6. Staggered Scroll Reveal
+        // 6. Staggered Scroll Reveal (FIXED TYPO HERE)
         const reveals = document.querySelectorAll('.reveal');
         const revealOnScroll = () => {
             const windowHeight = window.innerHeight;
-            re reveals.forEach(reveal => {
+            reveals.forEach(reveal => {
                 const elementTop = reveal.getBoundingClientRect().top;
                 if (elementTop < windowHeight - 100) reveal.classList.add('active');
             });
@@ -2093,20 +2093,18 @@
             });
         });
 
-        // 8. 🚀 UPDATED FORM SUBMISSION LOGIC FOR JAVA CRM WEBHOOK INGESTION
+        // 8. FORM SUBMISSION LOGIC FOR JAVA CRM WEBHOOK INGESTION
         const contactForm = document.getElementById('contactForm');
 
         if (contactForm) {
             contactForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
 
-                // Button loading state setting
                 const submitBtn = contactForm.querySelector('.submit-btn');
                 const originalBtnText = submitBtn.innerText;
                 submitBtn.innerText = 'Processing Lead...';
                 submitBtn.disabled = true;
 
-                // Form payloads structural mapping to Java Lead model architecture
                 const formData = {
                     name: document.getElementById('name').value,
                     email: document.getElementById('email').value,
@@ -2116,7 +2114,6 @@
                 };
 
                 try {
-                    // REST API call execution targeting local active port 8080 routing
                     const response = await fetch('http://localhost:8080/api/v1/webhook/new-lead', {
                         method: 'POST',
                         headers: {
@@ -2125,10 +2122,9 @@
                         body: JSON.stringify(formData)
                     });
 
-                    // Parse text execution because background automation runs asynchronously
                     const result = await response.json();
 
-                    if (response.status === 21 || response.ok || result.status === 'Success') {
+                    if (response.ok || result.status === 'Success') {
                         alert('Lead successfully ingested into the CRM background automation network.');
                         contactForm.reset();
                     } else {
@@ -2137,7 +2133,7 @@
                 } catch (error) {
                     console.error('Fatal API Pipeline error:', error);
                     alert('CRM Server Pipeline offline. Ensure backend application execution on port 8080.');
-                } finally {
+                } finaly {
                     submitBtn.innerText = originalBtnText;
                     submitBtn.disabled = false;
                 }
