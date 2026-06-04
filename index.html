@@ -131,8 +131,6 @@
             overflow: hidden;
         }
 
-
-
         /* Cinematic Noise Overlay */
         .noise-overlay {
             position: fixed;
@@ -148,10 +146,7 @@
         }
 
         /* Typography */
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3, h4 {
             font-family: var(--font-heading);
             font-weight: 700;
             line-height: 1.1;
@@ -338,21 +333,10 @@
             transition: all 0.3s ease;
         }
 
-        .sun-icon {
-            display: none;
-        }
-
-        .moon-icon {
-            display: block;
-        }
-
-        [data-theme="dark"] .sun-icon {
-            display: block;
-        }
-
-        [data-theme="dark"] .moon-icon {
-            display: none;
-        }
+        .sun-icon { display: none; }
+        .moon-icon { display: block; }
+        [data-theme="dark"] .sun-icon { display: block; }
+        [data-theme="dark"] .moon-icon { display: none; }
 
         /* =========================================
            PRELOADER (ALWAYS DARK THEME)
@@ -364,7 +348,6 @@
             width: 100%;
             height: 100vh;
             background-color: #02040a;
-            /* Hardcoded Dark Background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -384,13 +367,11 @@
             animation: pulseGlowDark 2s ease-in-out infinite alternate;
         }
 
-        /* Hardcoded Drop shadows for Dark Preloader */
         @keyframes pulseGlowDark {
             0% {
                 transform: scale(0.95);
                 filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.2));
             }
-
             100% {
                 transform: scale(1.05);
                 filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.6));
@@ -403,10 +384,6 @@
             font-weight: 800;
             color: #ffffff;
             letter-spacing: -1px;
-        }
-
-        .preloader-logo-text span {
-            color: #06B6D4;
         }
 
         .progress-bar-container {
@@ -426,13 +403,8 @@
         }
 
         @keyframes loadProgress {
-            0% {
-                width: 0%;
-            }
-
-            100% {
-                width: 100%;
-            }
+            0% { width: 0%; }
+            100% { width: 100%; }
         }
 
         /* =========================================
@@ -482,7 +454,6 @@
 
         .logo span {
             color: var(--accent-primary);
-            transition: color 0.4s ease;
         }
 
         .logo img {
@@ -598,17 +569,9 @@
             border-radius: 2px;
         }
 
-        .mobile-toggle.active span:nth-child(1) {
-            transform: translateY(9px) rotate(45deg);
-        }
-
-        .mobile-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-toggle.active span:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
-        }
+        .mobile-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+        .mobile-toggle.active span:nth-child(2) { opacity: 0; }
+        .mobile-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
         .mobile-menu {
             position: fixed;
@@ -719,17 +682,9 @@
             background: var(--dash-dot-bg);
         }
 
-        .dash-dot.red {
-            background: #ef4444;
-        }
-
-        .dash-dot.yellow {
-            background: #f59e0b;
-        }
-
-        .dash-dot.green {
-            background: #10b981;
-        }
+        .dash-dot.red { background: #ef4444; }
+        .dash-dot.yellow { background: #f59e0b; }
+        .dash-dot.green { background: #10b981; }
 
         .chart-container {
             display: flex;
@@ -759,7 +714,6 @@
                 transform: scaleY(0);
                 opacity: 0;
             }
-
             100% {
                 transform: scaleY(1);
                 opacity: 1;
@@ -808,17 +762,11 @@
             display: block;
             font-size: 1.8rem;
             margin-top: 5px;
-            transition: color 0.4s ease;
         }
 
         @keyframes pulse {
-            70% {
-                box-shadow: 0 0 0 15px rgba(14, 165, 233, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(14, 165, 233, 0);
-            }
+            70% { box-shadow: 0 0 0 15px rgba(14, 165, 233, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
         }
 
         /* TRUST SECTION */
@@ -862,17 +810,11 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            transition: color 0.4s ease;
         }
 
         @keyframes scrollLeft {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
 
         /* SERVICES */
@@ -911,7 +853,6 @@
             margin-bottom: 1.5rem;
             color: var(--accent-primary);
             border: 1px solid var(--icon-border);
-            transition: all 0.4s ease;
         }
 
         /* PROCESS */
@@ -962,7 +903,6 @@
             font-weight: 700;
             color: var(--accent-primary);
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
-            transition: all 0.4s ease;
         }
 
         /* PROJECTS */
@@ -997,7 +937,6 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            transition: background 0.4s ease;
         }
 
         .mockup-placeholder {
@@ -1010,7 +949,6 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
             display: flex;
             flex-direction: column;
-            transition: all 0.4s ease;
         }
 
         .mockup-header {
@@ -1021,7 +959,6 @@
             padding: 0 10px;
             gap: 5px;
             background: var(--mockup-header);
-            transition: all 0.4s ease;
         }
 
         .mockup-body {
@@ -1036,7 +973,6 @@
             height: 40px;
             border-radius: 4px;
             flex: 1 1 40%;
-            transition: background 0.4s ease;
         }
 
         .project-content {
@@ -1060,7 +996,6 @@
             background: var(--tag-bg);
             color: var(--accent-primary);
             border: 1px solid var(--tag-border);
-            transition: all 0.4s ease;
         }
 
         .project-link {
@@ -1094,7 +1029,6 @@
             padding: 3rem;
             text-align: center;
             box-shadow: var(--shadow-soft);
-            transition: all 0.4s ease;
         }
 
         .metric {
@@ -1122,8 +1056,7 @@
             padding: 20px 0;
         }
 
-        .marquee::before,
-        .marquee::after {
+        .marquee::before, .marquee::after {
             content: "";
             position: absolute;
             top: 0;
@@ -1156,14 +1089,12 @@
             margin-right: 2rem;
             white-space: normal;
             box-shadow: var(--shadow-soft);
-            transition: all 0.4s ease;
         }
 
         /* TEAM SECTION */
         #team {
             background: var(--bg-secondary);
             border-top: 1px solid var(--glass-border);
-            transition: all 0.4s ease;
         }
 
         .team-grid {
@@ -1179,7 +1110,6 @@
             border-radius: 20px;
             padding: 2.5rem 1.5rem;
             text-align: center;
-            transition: all 0.4s ease;
             box-shadow: var(--shadow-soft);
         }
 
@@ -1212,7 +1142,6 @@
             font-weight: 700;
             color: var(--accent-primary);
             border: 3px solid var(--team-img-border);
-            transition: all 0.4s ease;
         }
 
         .team-info h3 {
@@ -1261,7 +1190,6 @@
         #contact {
             background: var(--bg-color);
             border-top: 1px solid var(--glass-border);
-            transition: all 0.4s ease;
         }
 
         .contact-grid {
@@ -1281,7 +1209,6 @@
             justify-content: center;
             color: var(--accent-primary);
             border: 1px solid var(--icon-border);
-            transition: all 0.4s ease;
         }
 
         .contact-form-box {
@@ -1290,7 +1217,6 @@
             border-radius: 20px;
             padding: 3rem;
             box-shadow: var(--shadow-soft);
-            transition: all 0.4s ease;
         }
 
         .form-row {
@@ -1342,7 +1268,6 @@
             border-top: 1px solid var(--glass-border);
             padding: 5rem 5% 2rem;
             background: var(--bg-secondary);
-            transition: all 0.4s ease;
         }
 
         .footer-grid {
@@ -1350,8 +1275,7 @@
             grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 3rem;
             max-width: 1300px;
-            margin: 0 auto;
-            margin-bottom: 4rem;
+            margin: 0 auto 4rem;
         }
 
         .footer-logo {
@@ -1431,17 +1355,9 @@
 
         /* Animations */
         @keyframes float {
-            0% {
-                transform: translateY(0px) rotateY(-10deg);
-            }
-
-            50% {
-                transform: translateY(-15px) rotateY(-10deg);
-            }
-
-            100% {
-                transform: translateY(0px) rotateY(-10deg);
-            }
+            0% { transform: translateY(0px) rotateY(-10deg); }
+            50% { transform: translateY(-15px) rotateY(-10deg); }
+            100% { transform: translateY(0px) rotateY(-10deg); }
         }
 
         .reveal {
@@ -1469,92 +1385,36 @@
                 align-items: center;
             }
 
-            p {
-                text-align: center;
-            }
+            p { text-align: center; }
+            .hero-visual { display: none; }
+            .process-wrapper { flex-direction: column; gap: 2rem; }
+            .process-wrapper::before { display: none; }
+            .process-step { display: flex; align-items: center; text-align: left; gap: 1.5rem; }
+            .process-number { margin: 0; }
 
-            .hero-visual {
-                display: none;
-            }
-
-            .process-wrapper {
-                flex-direction: column;
-                gap: 2rem;
-            }
-
-            .process-wrapper::before {
-                display: none;
-            }
-
-            .process-step {
-                display: flex;
-                align-items: center;
-                text-align: left;
-                gap: 1.5rem;
-            }
-
-            .process-number {
-                margin: 0;
-            }
-
-            .projects-grid,
-            .contact-grid,
-            .team-grid {
+            .projects-grid, .contact-grid, .team-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .contact-info-wrap h2,
-            .contact-info-wrap p {
+            .contact-info-wrap h2, .contact-info-wrap p {
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .contact-method {
-                justify-content: center;
-            }
-
-            .contact-method-text p {
-                text-align: center;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-
-            .floating-cta {
-                display: none;
-            }
-
-            .nav-links,
-            .nav-btn,
-            .theme-toggle-btn {
-                display: none;
-            }
-
-            .mobile-toggle {
-                display: flex;
-            }
+            .contact-method { justify-content: center; }
+            .contact-method-text p { text-align: center; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+            .floating-cta { display: none; }
+            .nav-links, .nav-btn, .theme-toggle-btn { display: none; }
+            .mobile-toggle { display: flex; }
         }
 
         @media (max-width: 600px) {
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
         }
     </style>
 </head>
@@ -1565,18 +1425,15 @@
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
-    <!-- SPLASH SCREEN / PRELOADER (ALWAYS DARK THEME) -->
     <div id="preloader">
         <div class="preloader-content">
-            <div class="preloader-logo-text"><img src="ChatGPT_Image_May_29__2026__10_12_52_AM-removebg-preview.png"
-                    alt=""></div>
+            <div class="preloader-logo-text"><img src="ChatGPT_Image_May_29__2026__10_12_52_AM-removebg-preview.png" alt=""></div>
             <div class="progress-bar-container">
                 <div class="progress-bar"></div>
             </div>
         </div>
     </div>
 
-    <!-- NAVBAR -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="#" class="logo"><img src="logo2-removebg-preview.png" alt="">TRY<span>THADI</span></a>
@@ -1600,7 +1457,6 @@
             <div class="nav-actions">
                 <a href="#contact" class="btn btn-primary nav-btn">Book a Call</a>
 
-                <!-- LIGHT/DARK THEME TOGGLE BUTTON -->
                 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
                     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1627,7 +1483,6 @@
         </div>
     </nav>
 
-    <!-- MOBILE MENU -->
     <div class="mobile-menu" id="mobile-menu">
         <ul>
             <li><a href="#hero" class="mobile-link">Home</a></li>
@@ -1640,7 +1495,6 @@
         </ul>
     </div>
 
-    <!-- FLOATING CONVERSION CTA -->
     <a href="#contact" class="floating-cta">
         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -1648,7 +1502,6 @@
         Book Consultation
     </a>
 
-    <!-- HERO SECTION -->
     <section id="hero">
         <div class="glow-orb glow-blue"></div>
         <div class="glow-orb glow-lightblue"></div>
@@ -1671,7 +1524,6 @@
                         <div class="dash-dot yellow"></div>
                         <div class="dash-dot green"></div>
                     </div>
-                    <!-- CSS Animated Charts for SaaS Feel -->
                     <div class="chart-container">
                         <div class="chart-bar"></div>
                         <div class="chart-bar"></div>
@@ -1688,7 +1540,6 @@
         </div>
     </section>
 
-    <!-- TRUST SECTION -->
     <div class="trust-section reveal">
         <div class="container">
             <h4 class="trust-title">Ecosystem & Integrations</h4>
@@ -1700,7 +1551,6 @@
                     <div class="logo-placeholder">Make.com</div>
                     <div class="logo-placeholder">Salesforce</div>
                     <div class="logo-placeholder">HubSpot</div>
-                    <!-- Duplicate for infinite scroll -->
                     <div class="logo-placeholder">OpenAI</div>
                     <div class="logo-placeholder">n8n</div>
                     <div class="logo-placeholder">Zapier</div>
@@ -1710,7 +1560,6 @@
         </div>
     </div>
 
-    <!-- SERVICES (6 BENTO CARDS) -->
     <section id="services">
         <div class="container">
             <span class="section-subtitle reveal">Infrastructure</span>
@@ -1781,7 +1630,6 @@
         </div>
     </section>
 
-    <!-- PROCESS SECTION -->
     <section id="process">
         <div class="container">
             <span class="section-subtitle reveal">Methodology</span>
@@ -1816,7 +1664,6 @@
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
     <section id="projects" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
         <div class="container">
             <span class="section-subtitle reveal">Case Studies</span>
@@ -1884,7 +1731,6 @@
         </div>
     </section>
 
-    <!-- CASE STUDIES METRICS -->
     <section id="case-studies" style="padding-top: 0; background: var(--bg-secondary);">
         <div class="container">
             <div class="case-grid">
@@ -1907,7 +1753,6 @@
         </div>
     </section>
 
-    <!-- CLIENT TESTIMONIALS MARQUEE -->
     <section id="reviews">
         <div class="container">
             <span class="section-subtitle reveal">Social Proof</span>
@@ -1930,7 +1775,6 @@
                         highly scalable. Highly recommended."</p>
                     <h4>David L.</h4><span>Director, Fintech Solutions</span>
                 </div>
-                <!-- Duplicated for infinite scroll -->
                 <div class="testimonial-card">
                     <p>"The AI agents they built completely replaced our manual data entry. It feels like we hired an
                         entire team, but it runs 24/7."</p>
@@ -1945,7 +1789,6 @@
         </div>
     </section>
 
-    <!-- TEAM SECTION -->
     <section id="team" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
         <div class="container">
             <span class="section-subtitle reveal">The Architects</span>
@@ -1954,7 +1797,6 @@
                 automated revenue systems.</p>
 
             <div class="team-grid">
-                <!-- Team Member 1 -->
                 <div class="team-card reveal">
                     <div class="team-img-wrapper">
                         <div class="team-img-placeholder"><img src="" alt=""></div>
@@ -1977,7 +1819,6 @@
                     </div>
                 </div>
 
-                <!-- Team Member 2 -->
                 <div class="team-card reveal" style="transition-delay: 0.1s;">
                     <div class="team-img-wrapper">
                         <div class="team-img-placeholder"><img src="" alt=""></div>
@@ -2000,7 +1841,6 @@
                     </div>
                 </div>
 
-                <!-- Team Member 3 -->
                 <div class="team-card reveal" style="transition-delay: 0.2s;">
                     <div class="team-img-wrapper">
                         <div class="team-img-placeholder"><img src="" alt=""></div>
@@ -2026,7 +1866,6 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
     <section id="contact" style="background: var(--bg-color); border-top: 1px solid var(--glass-border);">
         <div class="glow-orb glow-blue" style="top: 20%; left: 10%; width: 50vw; height: 50vw; opacity: 0.1;"></div>
         <div class="container contact-grid">
@@ -2069,7 +1908,7 @@
             </div>
 
             <div class="contact-form-box reveal" style="transition-delay: 0.2s;">
-                <form action="#" method="POST">
+                <form id="contactForm">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name</label>
@@ -2106,7 +1945,6 @@
         </div>
     </section>
 
-    <!-- PROFESSIONAL FOOTER -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col" style="grid-column: span 1;">
@@ -2226,9 +2064,7 @@
 
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
-                // Don't close menu if they click theme toggle inside mobile menu
                 if (link.id === 'mobile-theme-toggle') return;
-
                 mobileNavToggle.classList.remove('active');
                 mobileMenu.classList.remove('active');
                 document.body.style.overflow = 'auto';
@@ -2239,7 +2075,7 @@
         const reveals = document.querySelectorAll('.reveal');
         const revealOnScroll = () => {
             const windowHeight = window.innerHeight;
-            reveals.forEach(reveal => {
+            re reveals.forEach(reveal => {
                 const elementTop = reveal.getBoundingClientRect().top;
                 if (elementTop < windowHeight - 100) reveal.classList.add('active');
             });
@@ -2256,21 +2092,21 @@
                 card.style.setProperty('--mouse-y', `${y}px`);
             });
         });
-        // 8. Form Submission Logic
-        const contactForm = document.querySelector('form');
+
+        // 8. 🚀 UPDATED FORM SUBMISSION LOGIC FOR JAVA CRM WEBHOOK INGESTION
+        const contactForm = document.getElementById('contactForm');
 
         if (contactForm) {
             contactForm.addEventListener('submit', async (e) => {
-                // Prevent the page from refreshing
                 e.preventDefault();
 
-                // Change button text to show loading state
+                // Button loading state setting
                 const submitBtn = contactForm.querySelector('.submit-btn');
                 const originalBtnText = submitBtn.innerText;
-                submitBtn.innerText = 'Sending...';
+                submitBtn.innerText = 'Processing Lead...';
                 submitBtn.disabled = true;
 
-                // Gather data from the form fields
+                // Form payloads structural mapping to Java Lead model architecture
                 const formData = {
                     name: document.getElementById('name').value,
                     email: document.getElementById('email').value,
@@ -2280,27 +2116,28 @@
                 };
 
                 try {
-                    // Send data to the Node.js backend
-                    const response = await fetch('/api/contact', {
+                    // REST API call execution targeting local active port 8080 routing
+                    const response = await fetch('http://localhost:8080/api/v1/webhook/new-lead', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify(formData)
                     });
+
+                    // Parse text execution because background automation runs asynchronously
                     const result = await response.json();
 
-                    if (result.success) {
-                        alert('Thanks! Your message has been sent successfully.');
-                        contactForm.reset(); // Clear the form
+                    if (response.status === 21 || response.ok || result.status === 'Success') {
+                        alert('Lead successfully ingested into the CRM background automation network.');
+                        contactForm.reset();
                     } else {
-                        alert('Oops! Something went wrong. Please try again.');
+                        alert('CRM Refused lead ingestion. System payload structure anomaly detected.');
                     }
                 } catch (error) {
-                    console.error('Error submitting form:', error);
-                    alert('Unable to connect to the server. Please check your connection.');
+                    console.error('Fatal API Pipeline error:', error);
+                    alert('CRM Server Pipeline offline. Ensure backend application execution on port 8080.');
                 } finally {
-                    // Restore button state
                     submitBtn.innerText = originalBtnText;
                     submitBtn.disabled = false;
                 }
