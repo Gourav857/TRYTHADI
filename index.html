@@ -956,7 +956,7 @@
             border-bottom: 1px solid var(--mockup-border);
             display: flex;
             align-items: center;
-            padding 0 10px;
+            padding: 0 10px;
             gap: 5px;
             background: var(--mockup-header);
         }
@@ -1441,6 +1441,7 @@
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
+    <!-- SPLASH SCREEN / PRELOADER (ALWAYS DARK THEME) -->
     <div id="preloader">
         <div class="preloader-content">
             <div class="preloader-logo-text"><img src="ChatGPT_Image_May_29__2026__10_12_52_AM-removebg-preview.png" alt=""></div>
@@ -1450,6 +1451,7 @@
         </div>
     </div>
 
+    <!-- NAVBAR -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="#" class="logo"><img src="logo2-removebg-preview.png" alt="">TRY<span>THADI</span></a>
@@ -1473,6 +1475,7 @@
             <div class="nav-actions">
                 <a href="#contact" class="btn btn-primary nav-btn">Book a Call</a>
 
+                <!-- LIGHT/DARK THEME TOGGLE BUTTON -->
                 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
                     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1499,6 +1502,7 @@
         </div>
     </nav>
 
+    <!-- MOBILE MENU -->
     <div class="mobile-menu" id="mobile-menu">
         <ul>
             <li><a href="#hero" class="mobile-link">Home</a></li>
@@ -1511,6 +1515,7 @@
         </ul>
     </div>
 
+    <!-- FLOATING CONVERSION CTA -->
     <a href="#contact" class="floating-cta">
         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -1518,6 +1523,7 @@
         Book Consultation
     </a>
 
+    <!-- HERO SECTION -->
     <section id="hero">
         <div class="glow-orb glow-blue"></div>
         <div class="glow-orb glow-lightblue"></div>
@@ -1556,6 +1562,7 @@
         </div>
     </section>
 
+    <!-- TRUST SECTION -->
     <div class="trust-section reveal">
         <div class="container">
             <h4 class="trust-title">Ecosystem & Integrations</h4>
@@ -1576,6 +1583,7 @@
         </div>
     </div>
 
+    <!-- SERVICES -->
     <section id="services">
         <div class="container">
             <span class="section-subtitle reveal">Infrastructure</span>
@@ -1646,6 +1654,7 @@
         </div>
     </section>
 
+    <!-- PROCESS SECTION -->
     <section id="process">
         <div class="container">
             <span class="section-subtitle reveal">Methodology</span>
@@ -1680,6 +1689,7 @@
         </div>
     </section>
 
+    <!-- PROJECTS SECTION -->
     <section id="projects" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
         <div class="container">
             <span class="section-subtitle reveal">Case Studies</span>
@@ -1747,6 +1757,7 @@
         </div>
     </section>
 
+    <!-- CASE STUDIES METRICS -->
     <section id="case-studies" style="padding-top: 0; background: var(--bg-secondary);">
         <div class="container">
             <div class="case-grid">
@@ -1769,6 +1780,7 @@
         </div>
     </section>
 
+    <!-- CLIENT TESTIMONIALS MARQUEE -->
     <section id="reviews">
         <div class="container">
             <span class="section-subtitle reveal">Social Proof</span>
@@ -1805,6 +1817,7 @@
         </div>
     </section>
 
+    <!-- TEAM SECTION -->
     <section id="team" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
         <div class="container">
             <span class="section-subtitle reveal">The Architects</span>
@@ -1813,6 +1826,7 @@
                 automated revenue systems.</p>
 
             <div class="team-grid">
+                <!-- Team Member 1 -->
                 <div class="team-card reveal">
                     <div class="team-img-wrapper">
                         <div class="team-img-placeholder"><img src="" alt=""></div>
@@ -1835,6 +1849,7 @@
                     </div>
                 </div>
 
+                <!-- Team Member 2 -->
                 <div class="team-card reveal" style="transition-delay: 0.1s;">
                     <div class="team-img-wrapper">
                         <div class="team-img-placeholder"><img src="" alt=""></div>
@@ -1857,6 +1872,7 @@
                     </div>
                 </div>
 
+                <!-- Team Member 3 -->
                 <div class="team-card reveal" style="transition-delay: 0.2s;">
                     <div class="team-img-wrapper">
                         <div class="team-img-placeholder"><img src="" alt=""></div>
@@ -1882,6 +1898,7 @@
         </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact" style="background: var(--bg-color); border-top: 1px solid var(--glass-border);">
         <div class="glow-orb glow-blue" style="top: 20%; left: 10%; width: 50vw; height: 50vw; opacity: 0.1;"></div>
         <div class="container contact-grid">
@@ -1961,6 +1978,7 @@
         </div>
     </section>
 
+    <!-- PROFESSIONAL FOOTER -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col" style="grid-column: span 1;">
@@ -2109,7 +2127,7 @@
             });
         });
 
-        // 8. FORM SUBMISSION LOGIC FOR JAVA CRM WEBHOOK INGESTION (FIXED & FULLY OPTIMIZED)
+        // 8. FORM SUBMISSION LOGIC FOR JAVA CRM WEBHOOK INGESTION (FORCE RESET FIX)
         const contactForm = document.getElementById('contactForm');
 
         if (contactForm) {
@@ -2138,12 +2156,18 @@
                         body: JSON.stringify(formData)
                     });
 
-                    // 🚀 FIXED: Status check securely handles text and standard status codes
                     if (response.ok || response.status === 201) {
-                        alert('Lead successfully ingested into the CRM background automation network.');
                         
-                        // 🚀 ULTRA BUG FIX: Alert ka 'OK' press karte hi form turant clear ho jayega
+                        // 🚀 FORCE CLEAR ALL INPUTS INSTANTLY
+                        document.getElementById('name').value = '';
+                        document.getElementById('email').value = '';
+                        document.getElementById('phone').value = '';
+                        document.getElementById('company').value = '';
+                        document.getElementById('message').value = '';
+                        
                         contactForm.reset(); 
+
+                        alert('Lead successfully ingested into the CRM background automation network.');
                     } else {
                         alert('CRM Refused lead ingestion. System payload structure anomaly detected.');
                     }
