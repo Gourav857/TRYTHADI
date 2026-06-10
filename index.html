@@ -4,15 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Premium AI Automation Agency specializing in intelligent workflows and AI agents.">
-    <title>CircuitWave | Premium AI Automation</title>
+    <meta name="description" content="Premium AI Automation Agency specializing in intelligent workflows and AI agents.">
+    <title> TryThadi | Premium AI Automation</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script>
         // Check theme before page loads to prevent flickering
@@ -131,8 +128,6 @@
             overflow: hidden;
         }
 
-
-
         /* Cinematic Noise Overlay */
         .noise-overlay {
             position: fixed;
@@ -148,10 +143,7 @@
         }
 
         /* Typography */
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3, h4 {
             font-family: var(--font-heading);
             font-weight: 700;
             line-height: 1.1;
@@ -338,21 +330,10 @@
             transition: all 0.3s ease;
         }
 
-        .sun-icon {
-            display: none;
-        }
-
-        .moon-icon {
-            display: block;
-        }
-
-        [data-theme="dark"] .sun-icon {
-            display: block;
-        }
-
-        [data-theme="dark"] .moon-icon {
-            display: none;
-        }
+        .sun-icon { display: none; }
+        .moon-icon { display: block; }
+        [data-theme="dark"] .sun-icon { display: block; }
+        [data-theme="dark"] .moon-icon { display: none; }
 
         /* =========================================
            PRELOADER (ALWAYS DARK THEME)
@@ -364,7 +345,6 @@
             width: 100%;
             height: 100vh;
             background-color: #02040a;
-            /* Hardcoded Dark Background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -384,13 +364,11 @@
             animation: pulseGlowDark 2s ease-in-out infinite alternate;
         }
 
-        /* Hardcoded Drop shadows for Dark Preloader */
         @keyframes pulseGlowDark {
             0% {
                 transform: scale(0.95);
                 filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.2));
             }
-
             100% {
                 transform: scale(1.05);
                 filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.6));
@@ -403,10 +381,6 @@
             font-weight: 800;
             color: #ffffff;
             letter-spacing: -1px;
-        }
-
-        .preloader-logo-text span {
-            color: #06B6D4;
         }
 
         .progress-bar-container {
@@ -426,13 +400,8 @@
         }
 
         @keyframes loadProgress {
-            0% {
-                width: 0%;
-            }
-
-            100% {
-                width: 100%;
-            }
+            0% { width: 0%; }
+            100% { width: 100%; }
         }
 
         /* =========================================
@@ -482,7 +451,6 @@
 
         .logo span {
             color: var(--accent-primary);
-            transition: color 0.4s ease;
         }
 
         .logo img {
@@ -598,17 +566,9 @@
             border-radius: 2px;
         }
 
-        .mobile-toggle.active span:nth-child(1) {
-            transform: translateY(9px) rotate(45deg);
-        }
-
-        .mobile-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-toggle.active span:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
-        }
+        .mobile-toggle.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+        .mobile-toggle.active span:nth-child(2) { opacity: 0; }
+        .mobile-toggle.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
         .mobile-menu {
             position: fixed;
@@ -719,17 +679,9 @@
             background: var(--dash-dot-bg);
         }
 
-        .dash-dot.red {
-            background: #ef4444;
-        }
-
-        .dash-dot.yellow {
-            background: #f59e0b;
-        }
-
-        .dash-dot.green {
-            background: #10b981;
-        }
+        .dash-dot.red { background: #ef4444; }
+        .dash-dot.yellow { background: #f59e0b; }
+        .dash-dot.green { background: #10b981; }
 
         .chart-container {
             display: flex;
@@ -759,7 +711,6 @@
                 transform: scaleY(0);
                 opacity: 0;
             }
-
             100% {
                 transform: scaleY(1);
                 opacity: 1;
@@ -808,17 +759,11 @@
             display: block;
             font-size: 1.8rem;
             margin-top: 5px;
-            transition: color 0.4s ease;
         }
 
         @keyframes pulse {
-            70% {
-                box-shadow: 0 0 0 15px rgba(14, 165, 233, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(14, 165, 233, 0);
-            }
+            70% { box-shadow: 0 0 0 15px rgba(14, 165, 233, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
         }
 
         /* TRUST SECTION */
@@ -862,17 +807,11 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            transition: color 0.4s ease;
         }
 
         @keyframes scrollLeft {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
 
         /* SERVICES */
@@ -911,7 +850,6 @@
             margin-bottom: 1.5rem;
             color: var(--accent-primary);
             border: 1px solid var(--icon-border);
-            transition: all 0.4s ease;
         }
 
         /* PROCESS */
@@ -962,7 +900,6 @@
             font-weight: 700;
             color: var(--accent-primary);
             box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
-            transition: all 0.4s ease;
         }
 
         /* PROJECTS */
@@ -997,7 +934,6 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            transition: background 0.4s ease;
         }
 
         .mockup-placeholder {
@@ -1010,7 +946,6 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
             display: flex;
             flex-direction: column;
-            transition: all 0.4s ease;
         }
 
         .mockup-header {
@@ -1021,7 +956,6 @@
             padding: 0 10px;
             gap: 5px;
             background: var(--mockup-header);
-            transition: all 0.4s ease;
         }
 
         .mockup-body {
@@ -1036,7 +970,6 @@
             height: 40px;
             border-radius: 4px;
             flex: 1 1 40%;
-            transition: background 0.4s ease;
         }
 
         .project-content {
@@ -1060,7 +993,6 @@
             background: var(--tag-bg);
             color: var(--accent-primary);
             border: 1px solid var(--tag-border);
-            transition: all 0.4s ease;
         }
 
         .project-link {
@@ -1094,7 +1026,6 @@
             padding: 3rem;
             text-align: center;
             box-shadow: var(--shadow-soft);
-            transition: all 0.4s ease;
         }
 
         .metric {
@@ -1122,8 +1053,7 @@
             padding: 20px 0;
         }
 
-        .marquee::before,
-        .marquee::after {
+        .marquee::before, .marquee::after {
             content: "";
             position: absolute;
             top: 0;
@@ -1156,14 +1086,12 @@
             margin-right: 2rem;
             white-space: normal;
             box-shadow: var(--shadow-soft);
-            transition: all 0.4s ease;
         }
 
         /* TEAM SECTION */
         #team {
             background: var(--bg-secondary);
             border-top: 1px solid var(--glass-border);
-            transition: all 0.4s ease;
         }
 
         .team-grid {
@@ -1179,7 +1107,6 @@
             border-radius: 20px;
             padding: 2.5rem 1.5rem;
             text-align: center;
-            transition: all 0.4s ease;
             box-shadow: var(--shadow-soft);
         }
 
@@ -1212,7 +1139,6 @@
             font-weight: 700;
             color: var(--accent-primary);
             border: 3px solid var(--team-img-border);
-            transition: all 0.4s ease;
         }
 
         .team-info h3 {
@@ -1261,7 +1187,6 @@
         #contact {
             background: var(--bg-color);
             border-top: 1px solid var(--glass-border);
-            transition: all 0.4s ease;
         }
 
         .contact-grid {
@@ -1269,6 +1194,13 @@
             grid-template-columns: 1fr 1.2fr;
             gap: 4rem;
             align-items: center;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
 
         .contact-method-icon {
@@ -1281,7 +1213,15 @@
             justify-content: center;
             color: var(--accent-primary);
             border: 1px solid var(--icon-border);
-            transition: all 0.4s ease;
+        }
+
+        .contact-method-text h4 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+        }
+
+        .contact-method-text p {
+            color: var(--text-muted);
         }
 
         .contact-form-box {
@@ -1290,7 +1230,6 @@
             border-radius: 20px;
             padding: 3rem;
             box-shadow: var(--shadow-soft);
-            transition: all 0.4s ease;
         }
 
         .form-row {
@@ -1342,7 +1281,6 @@
             border-top: 1px solid var(--glass-border);
             padding: 5rem 5% 2rem;
             background: var(--bg-secondary);
-            transition: all 0.4s ease;
         }
 
         .footer-grid {
@@ -1350,8 +1288,7 @@
             grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 3rem;
             max-width: 1300px;
-            margin: 0 auto;
-            margin-bottom: 4rem;
+            margin: 0 auto 4rem;
         }
 
         .footer-logo {
@@ -1431,17 +1368,9 @@
 
         /* Animations */
         @keyframes float {
-            0% {
-                transform: translateY(0px) rotateY(-10deg);
-            }
-
-            50% {
-                transform: translateY(-15px) rotateY(-10deg);
-            }
-
-            100% {
-                transform: translateY(0px) rotateY(-10deg);
-            }
+            0% { transform: translateY(0px) rotateY(-10deg); }
+            50% { transform: translateY(-15px) rotateY(-10deg); }
+            100% { transform: translateY(0px) rotateY(-10deg); }
         }
 
         .reveal {
@@ -1469,92 +1398,36 @@
                 align-items: center;
             }
 
-            p {
-                text-align: center;
-            }
+            p { text-align: center; }
+            .hero-visual { display: none; }
+            .process-wrapper { flex-direction: column; gap: 2rem; }
+            .process-wrapper::before { display: none; }
+            .process-step { display: flex; align-items: center; text-align: left; gap: 1.5rem; }
+            .process-number { margin: 0; }
 
-            .hero-visual {
-                display: none;
-            }
-
-            .process-wrapper {
-                flex-direction: column;
-                gap: 2rem;
-            }
-
-            .process-wrapper::before {
-                display: none;
-            }
-
-            .process-step {
-                display: flex;
-                align-items: center;
-                text-align: left;
-                gap: 1.5rem;
-            }
-
-            .process-number {
-                margin: 0;
-            }
-
-            .projects-grid,
-            .contact-grid,
-            .team-grid {
+            .projects-grid, .contact-grid, .team-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .contact-info-wrap h2,
-            .contact-info-wrap p {
+            .contact-info-wrap h2, .contact-info-wrap p {
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .contact-method {
-                justify-content: center;
-            }
-
-            .contact-method-text p {
-                text-align: center;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-
-            .floating-cta {
-                display: none;
-            }
-
-            .nav-links,
-            .nav-btn,
-            .theme-toggle-btn {
-                display: none;
-            }
-
-            .mobile-toggle {
-                display: flex;
-            }
+            .contact-method { justify-content: center; }
+            .contact-method-text p { text-align: center; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+            .floating-cta { display: none; }
+            .nav-links, .nav-btn, .theme-toggle-btn { display: none; }
+            .mobile-toggle { display: flex; }
         }
 
         @media (max-width: 600px) {
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
         }
     </style>
 </head>
@@ -1565,18 +1438,15 @@
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
-    <!-- SPLASH SCREEN / PRELOADER (ALWAYS DARK THEME) -->
     <div id="preloader">
         <div class="preloader-content">
-            <div class="preloader-logo-text"><img src="ChatGPT_Image_May_29__2026__10_12_52_AM-removebg-preview.png"
-                    alt=""></div>
+            <div class="preloader-logo-text"><img src="ChatGPT_Image_May_29__2026__10_12_52_AM-removebg-preview.png" alt=""></div>
             <div class="progress-bar-container">
                 <div class="progress-bar"></div>
             </div>
         </div>
     </div>
 
-    <!-- NAVBAR -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="#" class="logo"><img src="logo2-removebg-preview.png" alt="">TRY<span>THADI</span></a>
@@ -1600,7 +1470,6 @@
             <div class="nav-actions">
                 <a href="#contact" class="btn btn-primary nav-btn">Book a Call</a>
 
-                <!-- LIGHT/DARK THEME TOGGLE BUTTON -->
                 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
                     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1627,7 +1496,6 @@
         </div>
     </nav>
 
-    <!-- MOBILE MENU -->
     <div class="mobile-menu" id="mobile-menu">
         <ul>
             <li><a href="#hero" class="mobile-link">Home</a></li>
@@ -1640,7 +1508,6 @@
         </ul>
     </div>
 
-    <!-- FLOATING CONVERSION CTA -->
     <a href="#contact" class="floating-cta">
         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -1648,7 +1515,6 @@
         Book Consultation
     </a>
 
-    <!-- HERO SECTION -->
     <section id="hero">
         <div class="glow-orb glow-blue"></div>
         <div class="glow-orb glow-lightblue"></div>
@@ -1671,7 +1537,6 @@
                         <div class="dash-dot yellow"></div>
                         <div class="dash-dot green"></div>
                     </div>
-                    <!-- CSS Animated Charts for SaaS Feel -->
                     <div class="chart-container">
                         <div class="chart-bar"></div>
                         <div class="chart-bar"></div>
@@ -1688,7 +1553,6 @@
         </div>
     </section>
 
-    <!-- TRUST SECTION -->
     <div class="trust-section reveal">
         <div class="container">
             <h4 class="trust-title">Ecosystem & Integrations</h4>
@@ -1700,7 +1564,6 @@
                     <div class="logo-placeholder">Make.com</div>
                     <div class="logo-placeholder">Salesforce</div>
                     <div class="logo-placeholder">HubSpot</div>
-                    <!-- Duplicate for infinite scroll -->
                     <div class="logo-placeholder">OpenAI</div>
                     <div class="logo-placeholder">n8n</div>
                     <div class="logo-placeholder">Zapier</div>
@@ -1710,7 +1573,6 @@
         </div>
     </div>
 
-    <!-- SERVICES (6 BENTO CARDS) -->
     <section id="services">
         <div class="container">
             <span class="section-subtitle reveal">Infrastructure</span>
@@ -1781,7 +1643,6 @@
         </div>
     </section>
 
-    <!-- PROCESS SECTION -->
     <section id="process">
         <div class="container">
             <span class="section-subtitle reveal">Methodology</span>
@@ -1816,7 +1677,6 @@
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
     <section id="projects" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
         <div class="container">
             <span class="section-subtitle reveal">Case Studies</span>
@@ -1884,7 +1744,6 @@
         </div>
     </section>
 
-    <!-- CASE STUDIES METRICS -->
     <section id="case-studies" style="padding-top: 0; background: var(--bg-secondary);">
         <div class="container">
             <div class="case-grid">
@@ -1907,7 +1766,6 @@
         </div>
     </section>
 
-    <!-- CLIENT TESTIMONIALS MARQUEE -->
     <section id="reviews">
         <div class="container">
             <span class="section-subtitle reveal">Social Proof</span>
@@ -1930,7 +1788,6 @@
                         highly scalable. Highly recommended."</p>
                     <h4>David L.</h4><span>Director, Fintech Solutions</span>
                 </div>
-                <!-- Duplicated for infinite scroll -->
                 <div class="testimonial-card">
                     <p>"The AI agents they built completely replaced our manual data entry. It feels like we hired an
                         entire team, but it runs 24/7."</p>
@@ -1945,7 +1802,6 @@
         </div>
     </section>
 
-    <!-- TEAM SECTION -->
     <section id="team" style="background: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
         <div class="container">
             <span class="section-subtitle reveal">The Architects</span>
@@ -1954,7 +1810,6 @@
                 automated revenue systems.</p>
 
             <div class="team-grid">
-                <!-- Team Member 1 -->
                 <div class="team-card reveal">
                     <div class="team-img-wrapper">
                         <div class="team-img-placeholder"><img src="" alt=""></div>
@@ -1965,19 +1820,16 @@
                         <div class="team-social">
                             <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor"
                                     viewBox="0 0 24 24">
-                                    <path
-                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                                 </svg></a>
                             <a href="#" aria-label="Twitter"><svg width="18" height="18" fill="currentColor"
                                     viewBox="0 0 24 24">
-                                    <path
-                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                                 </svg></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Team Member 2 -->
                 <div class="team-card reveal" style="transition-delay: 0.1s;">
                     <div class="team-img-wrapper">
                         <div class="team-img-placeholder"><img src="" alt=""></div>
@@ -1988,22 +1840,19 @@
                         <div class="team-social">
                             <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor"
                                     viewBox="0 0 24 24">
-                                    <path
-                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                                 </svg></a>
                             <a href="#" aria-label="Twitter"><svg width="18" height="18" fill="currentColor"
                                     viewBox="0 0 24 24">
-                                    <path
-                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                                 </svg></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Team Member 3 -->
                 <div class="team-card reveal" style="transition-delay: 0.2s;">
                     <div class="team-img-wrapper">
-                        <div class="team-img-placeholder">RS</div>
+                        <div class="team-img-placeholder"><img src="" alt=""></div>
                     </div>
                     <div class="team-info">
                         <h3>Rohit Sharma</h3>
@@ -2011,13 +1860,11 @@
                         <div class="team-social">
                             <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor"
                                     viewBox="0 0 24 24">
-                                    <path
-                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                                 </svg></a>
                             <a href="#" aria-label="Twitter"><svg width="18" height="18" fill="currentColor"
                                     viewBox="0 0 24 24">
-                                    <path
-                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                                 </svg></a>
                         </div>
                     </div>
@@ -2026,7 +1873,6 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
     <section id="contact" style="background: var(--bg-color); border-top: 1px solid var(--glass-border);">
         <div class="glow-orb glow-blue" style="top: 20%; left: 10%; width: 50vw; height: 50vw; opacity: 0.1;"></div>
         <div class="container contact-grid">
@@ -2069,7 +1915,7 @@
             </div>
 
             <div class="contact-form-box reveal" style="transition-delay: 0.2s;">
-                <form action="#" method="POST">
+                <form id="contactForm">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name</label>
@@ -2106,11 +1952,10 @@
         </div>
     </section>
 
-    <!-- PROFESSIONAL FOOTER -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col" style="grid-column: span 1;">
-                <a href="#" class="footer-logo">CircuitWave<span>.AI</span></a>
+                <a href="#" class="footer-logo">Trythadi<span>.AI</span></a>
                 <p style="font-size: 0.95rem; margin-top: 1rem;">Architecting intelligent systems that allow modern
                     businesses to scale efficiently without scaling headcount.</p>
             </div>
@@ -2145,35 +1990,19 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 CircuitWave.AI. All rights reserved.</p>
+            <p>&copy; 2026 Trythadi.AI. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg></a>
                 <a href="#" aria-label="Twitter"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                     </svg></a>
             </div>
         </div>
     </footer>
 
     <script>
-
-        const response = await fetch('/api/v1/webhook/new-lead', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name,
-                email,
-                phone,
-                company,
-                message
-            })
-        });
         // 1. Theme Toggle Logic
         const toggleBtn = document.getElementById('theme-toggle');
         const mobileToggleBtn = document.getElementById('mobile-theme-toggle');
@@ -2240,9 +2069,7 @@
 
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
-                // Don't close menu if they click theme toggle inside mobile menu
                 if (link.id === 'mobile-theme-toggle') return;
-
                 mobileNavToggle.classList.remove('active');
                 mobileMenu.classList.remove('active');
                 document.body.style.overflow = 'auto';
@@ -2270,21 +2097,19 @@
                 card.style.setProperty('--mouse-y', `${y}px`);
             });
         });
-        // 8. Form Submission Logic
-        const contactForm = document.querySelector('form');
+
+        // 8. FORM SUBMISSION LOGIC WITH CLEAN ERROR HANDLING (CORS SAFETY INSURED)
+        const contactForm = document.getElementById('contactForm');
 
         if (contactForm) {
             contactForm.addEventListener('submit', async (e) => {
-                // Prevent the page from refreshing
                 e.preventDefault();
 
-                // Change button text to show loading state
                 const submitBtn = contactForm.querySelector('.submit-btn');
                 const originalBtnText = submitBtn.innerText;
-                submitBtn.innerText = 'Sending...';
+                submitBtn.innerText = 'Processing Lead...';
                 submitBtn.disabled = true;
 
-                // Gather data from the form fields
                 const formData = {
                     name: document.getElementById('name').value,
                     email: document.getElementById('email').value,
@@ -2294,27 +2119,26 @@
                 };
 
                 try {
-                    // Send data to the Node.js backend
-                    const response = await fetch('/api/contact', {
+                    const response = await fetch('https://crm-automation-of-trythadi.onrender.com/api/leads', {
                         method: 'POST',
                         headers: {
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
                         },
                         body: JSON.stringify(formData)
                     });
-                    const result = await response.json();
 
-                    if (result.success) {
-                        alert('Thanks! Your message has been sent successfully.');
-                        contactForm.reset(); // Clear the form
+                    if (response.ok || response.status === 201) {
+                        alert('Lead successfully ingested into the CRM background automation network. 🎉');
+                        contactForm.reset(); 
                     } else {
-                        alert('Oops! Something went wrong. Please try again.');
+                        alert('CRM Refused lead ingestion. System payload structure anomaly detected.');
                     }
                 } catch (error) {
-                    console.error('Error submitting form:', error);
-                    alert('Unable to connect to the server. Please check your connection.');
-                } finally {
-                    // Restore button state
+                    console.error('API Pipeline network error:', error);
+                    // Clear description of CORS/Network issue instead of generic port 8080 message
+                    alert('Network error or Security Block (CORS). Please ensure your Spring Boot Backend Controller allows requests from this domain via @CrossOrigin.');
+                } finally { 
                     submitBtn.innerText = originalBtnText;
                     submitBtn.disabled = false;
                 }
